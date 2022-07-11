@@ -32,8 +32,8 @@ VALUES ('READ'),
        ('UPDATE');
 
 INSERT INTO users (username, password, email)
-VALUES ('user', '$2a$12$jlXkLvOePxINbzzVyjOFJuiz5rtDmFX/HCVfxlNZFi9psvW.Vuy3e', 'user@yandex.ru');
+VALUES ('user_read', '$2a$12$jlXkLvOePxINbzzVyjOFJuiz5rtDmFX/HCVfxlNZFi9psvW.Vuy3e', 'user_read@yandex.ru'),
+       ('user_update', '$2a$12$jlXkLvOePxINbzzVyjOFJuiz5rtDmFX/HCVfxlNZFi9psvW.Vuy3e', 'user_update@yandex.ru');
 
 INSERT INTO users_authorities (user_id, authority_id)
-VALUES (1, 1) ;
-
+VALUES (1, 1), (2, 2) ;
